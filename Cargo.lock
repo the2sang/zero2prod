@@ -2850,6 +2850,9 @@ name = "uuid"
 version = "1.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b3758f5e68192bb96cc8f9b7e2c2cfdabb435499a28499a42f8f984092adad4b"
+dependencies = [
+ "getrandom",
+]
 
 [[package]]
 name = "vcpkg"
@@ -3232,11 +3235,13 @@ name = "zero2prod"
 version = "0.1.0"
 dependencies = [
  "actix-web",
+ "chrono",
  "config",
  "reqwest",
  "serde",
  "sqlx",
  "tokio",
+ "uuid",
 ]
 
 [[package]]
