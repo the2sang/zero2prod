@@ -4,10 +4,5 @@ pub mod configuration;
 pub mod routes;
 pub mod startup;
 
-pub trait Log: Sync + Send {
-    fn enabled(&self, metadata: &Metadata) -> bool;
+pub mod telemetry;
 
-   // fn log(&self, record: &Record);
-
-    fn flush(&self);
-}
