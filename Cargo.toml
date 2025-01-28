@@ -50,6 +50,7 @@ quickcheck = "1.0.3"
 quickcheck_macros = "1.0.0"
 tokio = { version = "1.43.0", features = ["rt", "macros"]}
 wiremock = "0.6.2"
+linkify = "0.10.0"
 
 [dependencies.reqwest]
 version = "0.12.12"

@@ -9,5 +9,7 @@ database:
   database_name: "newsletter"
   require_ssl: false
 email_client:
-  base_url: "localhost"
+  base_url: "https://api.postmarkapp.com/email"
   sender_email: "the2sang@gmail.com"
+  authorization_token: "c10370ec-6aca-4f1c-9d67-faebf7626bd5"
+  timeout_milliseconds: 10000

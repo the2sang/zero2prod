@@ -4,4 +4,4 @@ database:
   require_ssl: true
 email_client:
   base_url: "https://api.postmarkapp.com"
-  sender_email: "alpha.go7@kdn.com"
+  sender_email: "janakena111@corun.by-works.com"
