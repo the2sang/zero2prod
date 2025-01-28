@@ -1,9 +1,7 @@
 use actix_web::{web, HttpResponse};
 use uuid::Uuid;
 use sqlx::PgPool;
-use tracing::Instrument;
 use chrono::Utc;
-use crate::telemetry::init_subscriber;
 
 #[derive(serde::Deserialize)]
 pub struct FormData {
