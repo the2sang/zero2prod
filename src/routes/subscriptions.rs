@@ -50,6 +50,7 @@ pub async fn subscribe(
         Ok(form) => form,
         Err(_) => return HttpResponse::BadRequest().finish(),
     };
+
     let mut transaction = match pool.begin().await {
         Ok(transaction) => transaction,
         Err(_) => return HttpResponse::InternalServerError().finish(),
