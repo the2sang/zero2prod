@@ -66,7 +66,7 @@ struct SendEmailRequest<'a> {
 
 #[cfg(test)]
 mod tests {
-    use claim::{assert_err, assert_ok};
+    use claims::{assert_err, assert_ok};
     use fake::{Fake, Faker};
     use fake::faker::internet::en::SafeEmail;
     use fake::faker::lorem::en::{Sentence, Paragraph};
@@ -144,7 +144,7 @@ mod tests {
 
         //Act
         let _ = email_client
-            .send_email(subscriber_email, &subject, &content, &content)
+            .send_email(&subscriber_email, &subject, &content, &content)
             .await;
 
         //Assert
@@ -169,7 +169,7 @@ mod tests {
 
         //Act
         let outcome = email_client
-            .send_email(subscriber_email, &subject, &content, &content)
+            .send_email(&subscriber_email, &subject, &content, &content)
             .await;
 
         //Assert
@@ -195,7 +195,7 @@ mod tests {
 
         //Act
         let outcome = email_client
-            .send_email(subscriber_email, &subject, &content, &content)
+            .send_email(&subscriber_email, &subject, &content, &content)
             .await;
 
         //Assert
