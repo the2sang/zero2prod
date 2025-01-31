@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/migrations/20250126125436_create_subscriptions_table.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations/20250128221912_make_status_not_null_in_subscriptions.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations/20250128222117_create_subscriptions_tokens_table.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/20250131111614_rename_password_column.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>
